@@ -1,0 +1,215 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MEMS:BNO085 U?
+U 1 1 5F518C32
+P 2500 3200
+F 0 "U?" H 3325 5387 60  0000 C CNN
+F 1 "BNO085" H 3325 5281 60  0000 C CNN
+F 2 "LGA:LGA-28-5832" H 3100 3150 60  0001 C CNN
+F 3 "" H 2500 3350 60  0000 C CNN
+	1    2500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MODULE_compute:ARDUINO_MKR CN?
+U 1 1 5F519983
+P 4250 6650
+F 0 "CN?" H 4250 7547 60  0000 C CNN
+F 1 "ARDUINO_MKR" H 4250 7441 60  0000 C CNN
+F 2 "MODULE_compute:ARDUINO_MKR" H 4150 7300 60  0001 C CNN
+F 3 "" H 4250 6350 60  0000 C CNN
+	1    4250 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:GND #PWR?
+U 1 1 5F51A15B
+P 2400 3150
+F 0 "#PWR?" H 2400 2900 50  0001 C CNN
+F 1 "GND" H 2405 2977 50  0000 C CNN
+F 2 "" H 2400 3150 50  0000 C CNN
+F 3 "" H 2400 3150 50  0000 C CNN
+	1    2400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:GND #PWR?
+U 1 1 5F51B2D4
+P 4950 7400
+F 0 "#PWR?" H 4950 7150 50  0001 C CNN
+F 1 "GND" H 4955 7227 50  0000 C CNN
+F 2 "" H 4950 7400 50  0000 C CNN
+F 3 "" H 4950 7400 50  0000 C CNN
+	1    4950 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6300 4950 6300
+Wire Wire Line
+	4950 6300 4950 7400
+Wire Wire Line
+	2500 2950 2400 2950
+Wire Wire Line
+	2400 2950 2400 3050
+Wire Wire Line
+	2500 3050 2400 3050
+Connection ~ 2400 3050
+Wire Wire Line
+	2400 3050 2400 3150
+$Comp
+L power-supply:+3V3 #PWR?
+U 1 1 5F51C7C9
+P 2400 1200
+F 0 "#PWR?" H 2400 1050 50  0001 C CNN
+F 1 "+3V3" H 2415 1373 50  0000 C CNN
+F 2 "" H 2400 1200 50  0000 C CNN
+F 3 "" H 2400 1200 50  0000 C CNN
+	1    2400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR?
+U 1 1 5F51D55B
+P 4950 5900
+F 0 "#PWR?" H 4950 5750 50  0001 C CNN
+F 1 "+3V3" H 4965 6073 50  0000 C CNN
+F 2 "" H 4950 5900 50  0000 C CNN
+F 3 "" H 4950 5900 50  0000 C CNN
+	1    4950 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6200 4950 6200
+Wire Wire Line
+	4950 6200 4950 5900
+NoConn ~ 4850 6000
+NoConn ~ 4850 6100
+NoConn ~ 3650 6000
+Wire Wire Line
+	2500 1400 2400 1400
+Wire Wire Line
+	2400 1400 2400 1300
+Wire Wire Line
+	2500 1300 2400 1300
+Connection ~ 2400 1300
+Wire Wire Line
+	2400 1300 2400 1200
+Wire Wire Line
+	5800 7100 4850 7100
+Wire Wire Line
+	5800 7000 4850 7000
+Wire Wire Line
+	5800 6900 4850 6900
+Wire Wire Line
+	5800 6800 4850 6800
+Wire Wire Line
+	5800 6700 4850 6700
+Text Label 5050 7100 0    50   ~ 0
+SPI_MOSI
+Text Label 5050 7000 0    50   ~ 0
+SPI_SCK
+Text Label 5050 6900 0    50   ~ 0
+SPI_MISO
+Text Label 5050 6800 0    50   ~ 0
+I2C_SDA
+Text Label 5050 6700 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	5800 7300 4850 7300
+Wire Wire Line
+	2800 7000 3650 7000
+Text Label 5050 7300 0    50   ~ 0
+BMP388_INT
+Text Label 2950 7000 0    50   ~ 0
+BMP388_CS
+$Comp
+L IC_sensor:BMP388 U?
+U 1 1 5F5215A0
+P 9500 2150
+F 0 "U?" H 9500 2575 50  0000 C CNN
+F 1 "BMP388" H 9500 2484 50  0000 C CNN
+F 2 "IC_sensor:BMP388" H 9500 2150 50  0001 C CNN
+F 3 "" H 9500 2150 50  0001 C CNN
+	1    9500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR?
+U 1 1 5F523A0A
+P 9950 1850
+F 0 "#PWR?" H 9950 1700 50  0001 C CNN
+F 1 "+3V3" H 9965 2023 50  0000 C CNN
+F 2 "" H 9950 1850 50  0000 C CNN
+F 3 "" H 9950 1850 50  0000 C CNN
+	1    9950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:GND #PWR?
+U 1 1 5F524BB6
+P 9950 2450
+F 0 "#PWR?" H 9950 2200 50  0001 C CNN
+F 1 "GND" H 9955 2277 50  0000 C CNN
+F 2 "" H 9950 2450 50  0000 C CNN
+F 3 "" H 9950 2450 50  0000 C CNN
+	1    9950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 2050 9950 2050
+Wire Wire Line
+	9950 2050 9950 1950
+Wire Wire Line
+	9850 1950 9950 1950
+Connection ~ 9950 1950
+Wire Wire Line
+	9950 1950 9950 1850
+Wire Wire Line
+	9850 2150 9950 2150
+Wire Wire Line
+	9950 2150 9950 2250
+Wire Wire Line
+	9850 2350 9950 2350
+Connection ~ 9950 2350
+Wire Wire Line
+	9950 2350 9950 2450
+Wire Wire Line
+	9850 2250 9950 2250
+Connection ~ 9950 2250
+Wire Wire Line
+	9950 2250 9950 2350
+Wire Wire Line
+	8450 1950 9150 1950
+Wire Wire Line
+	8450 2050 9150 2050
+Wire Wire Line
+	8450 2150 9150 2150
+Wire Wire Line
+	8450 2250 9150 2250
+Wire Wire Line
+	8450 2350 9150 2350
+Text Label 8550 2350 0    50   ~ 0
+BMP388_INT
+Text Label 8550 2250 0    50   ~ 0
+BMP388_CS
+Text Label 8550 2050 0    50   ~ 0
+SPI_MISO
+Text Label 8550 2150 0    50   ~ 0
+SPI_SCK
+Text Label 8550 1950 0    50   ~ 0
+SPI_MOSI
+$EndSCHEMATC
