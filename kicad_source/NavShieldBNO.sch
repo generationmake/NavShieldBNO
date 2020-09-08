@@ -1058,4 +1058,103 @@ Text Notes 2850 3500 0    50   ~ 0
 i2c address 0x4A or 0x4B
 Text Notes 1900 700  0    50   ~ 0
 should also support BNO055, BNO070, BNO080 and BNO085\nas all have the same footprint and pin out
+$Comp
+L devices:R_0603 R?
+U 1 1 5F58EB42
+P 8950 3500
+F 0 "R?" H 9009 3546 50  0000 L CNN
+F 1 "10k" H 9009 3455 50  0000 L CNN
+F 2 "resistors:R_0603" H 8950 3350 50  0001 C CNN
+F 3 "" H 8950 3500 50  0000 C CNN
+	1    8950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR?
+U 1 1 5F58EB4C
+P 8950 3350
+F 0 "#PWR?" H 8950 3200 50  0001 C CNN
+F 1 "+3V3" H 8965 3523 50  0000 C CNN
+F 2 "" H 8950 3350 50  0000 C CNN
+F 3 "" H 8950 3350 50  0000 C CNN
+	1    8950 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3350 8950 3400
+Wire Wire Line
+	8700 3650 8950 3650
+Wire Wire Line
+	8950 3600 8950 3650
+Connection ~ 8950 3650
+Wire Wire Line
+	8950 3650 9850 3650
+Text Label 9200 3650 0    50   ~ 0
+BMP388_INT
+$Comp
+L devices:R_0603 R?
+U 1 1 5F5A6A36
+P 8950 4100
+F 0 "R?" H 9009 4146 50  0000 L CNN
+F 1 "10k" H 9009 4055 50  0000 L CNN
+F 2 "resistors:R_0603" H 8950 3950 50  0001 C CNN
+F 3 "" H 8950 4100 50  0000 C CNN
+	1    8950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR?
+U 1 1 5F5A6A40
+P 8950 3950
+F 0 "#PWR?" H 8950 3800 50  0001 C CNN
+F 1 "+3V3" H 8965 4123 50  0000 C CNN
+F 2 "" H 8950 3950 50  0000 C CNN
+F 3 "" H 8950 3950 50  0000 C CNN
+	1    8950 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3950 8950 4000
+Wire Wire Line
+	8700 4250 8950 4250
+Wire Wire Line
+	8950 4200 8950 4250
+Connection ~ 8950 4250
+Wire Wire Line
+	8950 4250 9850 4250
+Text Label 9200 4250 0    50   ~ 0
+BNO085_INT
+$Comp
+L devices:R_0603 R?
+U 1 1 5F5B49FC
+P 8950 4700
+F 0 "R?" H 9009 4746 50  0000 L CNN
+F 1 "100k" H 9009 4655 50  0000 L CNN
+F 2 "resistors:R_0603" H 8950 4550 50  0001 C CNN
+F 3 "" H 8950 4700 50  0000 C CNN
+	1    8950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-supply:+3V3 #PWR?
+U 1 1 5F5B4A06
+P 8950 4550
+F 0 "#PWR?" H 8950 4400 50  0001 C CNN
+F 1 "+3V3" H 8965 4723 50  0000 C CNN
+F 2 "" H 8950 4550 50  0000 C CNN
+F 3 "" H 8950 4550 50  0000 C CNN
+	1    8950 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4550 8950 4600
+Wire Wire Line
+	8700 4850 8950 4850
+Wire Wire Line
+	8950 4800 8950 4850
+Connection ~ 8950 4850
+Wire Wire Line
+	8950 4850 9850 4850
+Text Label 9300 4850 0    50   ~ 0
+RESET
 $EndSCHEMATC
