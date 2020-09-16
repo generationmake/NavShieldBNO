@@ -1,6 +1,19 @@
 # NavShieldBNO
 Navigation shield for Arduino with Bosch BNO055, BNO080 or BNO085
 
+![NavShieldBNO rendering](docs/images/NavShieldBNO_rendering.png)
+
+## PCB
+
+### Top
+
+![NavShieldBNO PCB top](docs/images/NavShieldBNO_top.png)
+
+### Bottom
+
+![NavShieldBNO PCB bot](docs/images/NavShieldBNO_bot.png)
+
+
 ## Resources
 
 ### Datasheets
