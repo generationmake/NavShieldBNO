@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "NavShieldBNO"
-Date "2020-09-17"
+Date "2020-09-25"
 Rev "dev_0.1"
 Comp "generationmake"
 Comment1 ""
@@ -967,7 +967,6 @@ Wire Wire Line
 NoConn ~ 3650 7200
 NoConn ~ 3650 6800
 NoConn ~ 3650 6700
-NoConn ~ 3650 6600
 NoConn ~ 3650 6500
 NoConn ~ 3650 6400
 NoConn ~ 3650 6300
@@ -1184,25 +1183,24 @@ Wire Wire Line
 $Comp
 L devices:R_0603 R30
 U 1 1 5F6453B8
-P 5950 2050
-F 0 "R30" H 6009 2096 50  0000 L CNN
-F 1 "0R" H 6009 2005 50  0000 L CNN
-F 2 "resistors:R_0603" H 5950 1900 50  0001 C CNN
-F 3 "" H 5950 2050 50  0000 C CNN
-	1    5950 2050
+P 6550 2050
+F 0 "R30" H 6609 2096 50  0000 L CNN
+F 1 "0R" H 6609 2005 50  0000 L CNN
+F 2 "resistors:R_0603" H 6550 1900 50  0001 C CNN
+F 3 "" H 6550 2050 50  0000 C CNN
+	1    6550 2050
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6800 2050 6050 2050
+	7400 2050 6650 2050
 Wire Wire Line
-	5850 2050 5200 2050
-Connection ~ 5200 2050
-Text Label 6650 2050 2    50   ~ 0
-WAKE
+	6450 2050 6400 2050
+Text Label 7250 2050 2    50   ~ 0
+WAKE_1
 Wire Wire Line
 	2800 6900 3650 6900
 Text Label 2950 6900 0    50   ~ 0
-WAKE
+WAKE_1
 $Comp
 L mechanical-connectors:CONN_01X04 CN2
 U 1 1 5F65BE4F
@@ -1321,4 +1319,35 @@ Text Label 4350 2850 0    50   ~ 0
 BNO085_H_SCK
 Text Label 4350 2750 0    50   ~ 0
 BNO085_H_MISO
+$Comp
+L devices:R_0603 R31
+U 1 1 5F6DCF1C
+P 6550 1800
+F 0 "R31" H 6609 1846 50  0000 L CNN
+F 1 "DNI" H 6609 1755 50  0000 L CNN
+F 2 "resistors:R_0603" H 6550 1650 50  0001 C CNN
+F 3 "" H 6550 1800 50  0000 C CNN
+	1    6550 1800
+	0    -1   -1   0   
+$EndComp
+Text Label 7250 1800 2    50   ~ 0
+WAKE_2
+Wire Wire Line
+	7400 1800 6650 1800
+Wire Wire Line
+	6450 1800 6400 1800
+Wire Wire Line
+	6400 1800 6400 2050
+Connection ~ 6400 2050
+Wire Wire Line
+	2800 6600 3650 6600
+Text Label 2950 6600 0    50   ~ 0
+WAKE_2
+Wire Wire Line
+	5200 2050 6400 2050
+Connection ~ 5200 2050
+Text Notes 6200 3750 0    50   ~ 0
+R9 and R10 define \nlower bit of i2c address 
+Text Notes 5950 1300 0    50   ~ 0
+PS1 PS0 interface\n 0    0   i2c\n 0    1   uart-RVC\n 1    0   uart\n 1    1   SPI\n
 $EndSCHEMATC
