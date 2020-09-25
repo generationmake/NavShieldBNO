@@ -817,7 +817,6 @@ Wire Wire Line
 	4150 2750 5650 2750
 Text Label 2950 7300 0    50   ~ 0
 BNO085_CS
-NoConn ~ 4150 1300
 Wire Wire Line
 	1400 2350 2500 2350
 $Comp
@@ -1168,7 +1167,7 @@ F 3 "" H 4750 1800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4150 1800 4650 1800
+	4150 1800 4200 1800
 Wire Wire Line
 	4850 1800 4950 1800
 Text Label 4250 1800 0    50   ~ 0
@@ -1350,4 +1349,74 @@ Text Notes 6200 3750 0    50   ~ 0
 R9 and R10 define \nlower bit of i2c address 
 Text Notes 5950 1300 0    50   ~ 0
 PS1 PS0 interface\n 0    0   i2c\n 0    1   uart-RVC\n 1    0   uart\n 1    1   SPI\n
+$Comp
+L devices:Crystal_Small Y1
+U 1 1 5F6DCF85
+P 4350 1300
+F 0 "Y1" V 4304 1388 50  0000 L CNN
+F 1 "DNI" V 4395 1388 50  0000 L CNN
+F 2 "crystals:Crystal_SMD_3.2x1.5mm_2Pad" V 4441 1388 50  0001 L CNN
+F 3 "" H 4350 1300 50  0000 C CNN
+	1    4350 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L devices:C_0603 C7
+U 1 1 5F6DD8D6
+P 4750 1500
+F 0 "C7" H 4842 1546 50  0000 L CNN
+F 1 "22pF" H 4842 1455 50  0000 L CNN
+F 2 "capacitors:C_0603" H 4750 1350 50  0001 C CNN
+F 3 "" H 4750 1500 50  0000 C CNN
+	1    4750 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L devices:C_0603 C6
+U 1 1 5F6E3776
+P 4750 1100
+F 0 "C6" H 4842 1146 50  0000 L CNN
+F 1 "22pF" H 4842 1055 50  0000 L CNN
+F 2 "capacitors:C_0603" H 4750 950 50  0001 C CNN
+F 3 "" H 4750 1100 50  0000 C CNN
+	1    4750 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 1300 4200 1300
+Wire Wire Line
+	4200 1300 4200 1100
+Wire Wire Line
+	4200 1100 4350 1100
+Wire Wire Line
+	4850 1100 4950 1100
+Wire Wire Line
+	4950 1100 4950 1500
+Connection ~ 4950 1800
+Wire Wire Line
+	4650 1500 4350 1500
+Wire Wire Line
+	4200 1500 4200 1800
+Connection ~ 4200 1800
+Wire Wire Line
+	4200 1800 4650 1800
+Wire Wire Line
+	4350 1400 4350 1500
+Connection ~ 4350 1500
+Wire Wire Line
+	4350 1500 4200 1500
+Wire Wire Line
+	4350 1200 4350 1100
+Connection ~ 4350 1100
+Wire Wire Line
+	4350 1100 4650 1100
+Wire Wire Line
+	4850 1500 4950 1500
+Connection ~ 4950 1500
+Wire Wire Line
+	4950 1500 4950 1800
+Text Label 4250 1100 0    50   ~ 0
+XIN32
+Text Notes 3950 1000 0    50   ~ 0
+option for\n32.768 kHz\ncrystal
 $EndSCHEMATC
