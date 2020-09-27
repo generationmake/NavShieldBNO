@@ -1,14 +1,14 @@
 (export (version D)
   (design
     (source /home/bernhard/projects/NavShieldBNO/kicad_source/NavShieldBNO.sch)
-    (date "So 27 Sep 2020 08:49:33 CEST")
+    (date "So 27 Sep 2020 09:01:31 CEST")
     (tool "Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title NavShieldBNO)
         (company generationmake)
-        (rev dev_0.1)
-        (date 2020-09-25)
+        (rev 0.1)
+        (date 2020-09-27)
         (source NavShieldBNO.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
@@ -320,7 +320,13 @@
       (footprint capacitors:C_0603)
       (libsource (lib devices) (part C_0603) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
-      (tstamp 5F71461C)))
+      (tstamp 5F71461C))
+    (comp (ref L1)
+      (value Label)
+      (footprint labels:generationmake_small_solder)
+      (libsource (lib devices) (part Label) (description Label))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5F79EEB6)))
   (libparts
     (libpart (lib IC_sensor) (part BME680)
       (description "Bosch BME680 Low power gas, pressure, temperature & humidity sensor")
@@ -464,6 +470,11 @@
       (pins
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))))
+    (libpart (lib devices) (part Label)
+      (description Label)
+      (fields
+        (field (name Reference) L)
+        (field (name Value) Label)))
     (libpart (lib devices) (part R_0603)
       (description Resistor)
       (footprints

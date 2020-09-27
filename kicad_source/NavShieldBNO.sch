@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "NavShieldBNO"
-Date "2020-09-25"
-Rev "dev_0.1"
+Date "2020-09-27"
+Rev "0.1"
 Comp "generationmake"
 Comment1 ""
 Comment2 ""
@@ -1810,4 +1810,15 @@ ENV_SDA
 Text Label 7700 4650 0    50   ~ 0
 ENV_SCL
 NoConn ~ 7500 4850
+$Comp
+L devices:Label L1
+U 1 1 5F79EEB6
+P 700 7600
+F 0 "L1" H 928 7653 60  0000 L CNN
+F 1 "Label" H 928 7547 60  0000 L CNN
+F 2 "labels:generationmake_small_solder" H 600 7700 60  0001 C CNN
+F 3 "" H 700 7600 60  0000 C CNN
+	1    700  7600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
