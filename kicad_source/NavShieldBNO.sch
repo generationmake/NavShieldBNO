@@ -1809,7 +1809,6 @@ Text Label 7700 4750 0    50   ~ 0
 ENV_SDA
 Text Label 7700 4650 0    50   ~ 0
 ENV_SCL
-NoConn ~ 7500 4850
 $Comp
 L devices:Label L1
 U 1 1 5F79EEB6
@@ -1819,6 +1818,121 @@ F 1 "Label" H 928 7547 60  0000 L CNN
 F 2 "labels:generationmake_small_solder" H 600 7700 60  0001 C CNN
 F 3 "" H 700 7600 60  0000 C CNN
 	1    700  7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mechanical-connectors:TEST_1P W3
+U 1 1 5F71EF96
+P 5800 6700
+F 0 "W3" V 5750 6650 50  0000 L CNN
+F 1 "TEST_1P" V 5845 6888 50  0000 L CNN
+F 2 "wire_pads:SolderWirePad_single_1mmSMD" H 6000 6700 50  0001 C CNN
+F 3 "" H 6000 6700 50  0000 C CNN
+	1    5800 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L mechanical-connectors:TEST_1P W4
+U 1 1 5F71FCBA
+P 5800 6800
+F 0 "W4" V 5750 6750 50  0000 L CNN
+F 1 "TEST_1P" V 5845 6988 50  0000 L CNN
+F 2 "wire_pads:SolderWirePad_single_1mmSMD" H 6000 6800 50  0001 C CNN
+F 3 "" H 6000 6800 50  0000 C CNN
+	1    5800 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L mechanical-connectors:TEST_1P W5
+U 1 1 5F71FE99
+P 5800 6900
+F 0 "W5" V 5750 6850 50  0000 L CNN
+F 1 "TEST_1P" V 5845 7088 50  0000 L CNN
+F 2 "wire_pads:SolderWirePad_single_1mmSMD" H 6000 6900 50  0001 C CNN
+F 3 "" H 6000 6900 50  0000 C CNN
+	1    5800 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L mechanical-connectors:TEST_1P W6
+U 1 1 5F720010
+P 5800 7000
+F 0 "W6" V 5750 6950 50  0000 L CNN
+F 1 "TEST_1P" V 5845 7188 50  0000 L CNN
+F 2 "wire_pads:SolderWirePad_single_1mmSMD" H 6000 7000 50  0001 C CNN
+F 3 "" H 6000 7000 50  0000 C CNN
+	1    5800 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L mechanical-connectors:TEST_1P W7
+U 1 1 5F72016B
+P 5800 7100
+F 0 "W7" V 5750 7050 50  0000 L CNN
+F 1 "TEST_1P" V 5845 7288 50  0000 L CNN
+F 2 "wire_pads:SolderWirePad_single_1mmSMD" H 6000 7100 50  0001 C CNN
+F 3 "" H 6000 7100 50  0000 C CNN
+	1    5800 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L mechanical-connectors:TEST_1P W1
+U 1 1 5F72032F
+P 2000 3450
+F 0 "W1" V 1954 3638 50  0000 L CNN
+F 1 "TEST_1P" V 2045 3638 50  0000 L CNN
+F 2 "wire_pads:SolderWirePad_single_1mmSMD" H 2200 3450 50  0001 C CNN
+F 3 "" H 2200 3450 50  0000 C CNN
+	1    2000 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L mechanical-connectors:TEST_1P W2
+U 1 1 5F722ECE
+P 2000 3650
+F 0 "W2" V 1954 3838 50  0000 L CNN
+F 1 "TEST_1P" V 2045 3838 50  0000 L CNN
+F 2 "wire_pads:SolderWirePad_single_1mmSMD" H 2200 3650 50  0001 C CNN
+F 3 "" H 2200 3650 50  0000 C CNN
+	1    2000 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 3450 1850 3450
+Connection ~ 1850 3450
+Wire Wire Line
+	2000 3650 1950 3650
+Wire Wire Line
+	1950 3650 1950 3550
+Connection ~ 1950 3550
+$Comp
+L mechanical-connectors:TEST_1P W8
+U 1 1 5F7687A2
+P 8000 4950
+F 0 "W8" V 7954 5138 50  0000 L CNN
+F 1 "TEST_1P" V 8045 5138 50  0000 L CNN
+F 2 "wire_pads:SolderWirePad_single_1mmSMD" H 8200 4950 50  0001 C CNN
+F 3 "" H 8200 4950 50  0000 C CNN
+	1    8000 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 4850 7600 4850
+Wire Wire Line
+	7600 4850 7600 4950
+Wire Wire Line
+	7600 4950 8000 4950
+Text Label 7650 4950 0    50   ~ 0
+INT
+$Comp
+L devices:Label L2
+U 1 1 5F77DB51
+P 1400 7600
+F 0 "L2" H 1628 7653 60  0000 L CNN
+F 1 "Label" H 1628 7547 60  0000 L CNN
+F 2 "labels:generationmake_logo" H 1300 7700 60  0001 C CNN
+F 3 "" H 1400 7600 60  0000 C CNN
+	1    1400 7600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
