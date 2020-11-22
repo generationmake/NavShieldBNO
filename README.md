@@ -21,7 +21,8 @@ It is possible to mount a BNO055 instead of the BNO085. The BNO055 only supports
 
 The following parts need to be changed:
 
-^ part ^ BNO085 variant ^ BNO055 variant ^
+| part | BNO085 variant | BNO055 variant |
+|:----:|:--------------:|:--------------:|
 | R1   | 10k            | DNI            |
 | R2   | 10k            | DNI            |
 | R5   | 10k            | DNI            |
@@ -52,8 +53,9 @@ The following parts need to be changed:
 
  * *BNO080* https://cdn.sparkfun.com/assets/2/b/9/0/6/DS-14686-BNO080.pdf
  * *BMP388* https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp388-ds001.pdf
- 
- ### Arduino Libraries
+ * *BNO055* https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bno055-ds000.pdf
+
+### Arduino Libraries
 
 * [107-Arduino-BNO085](https://github.com/107-systems/107-Arduino-BNO085)
 * [107-Arduino-BMP388](https://github.com/107-systems/107-Arduino-BMP388)
